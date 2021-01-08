@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jumbo Meal</title>
+
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/rangeslider.min.js?v=1"></script>
+	<script src="scripts/mealcalc.js?v=1"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/rangeslider.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+	<div class="header">
+		<span class="title">Jumbo Meal</span>
+	</div>
+
+	<div class="content">
+		<div class="sliders">
+			<div class="slider-wrap breakfast-wrap">
+				<span class="slider-label">Breakfast</span>
+				<input class="slider breakfast-slider" data-meal="breakfast" type="range" min="0" max="9" step="1" value="7" data-orientation="vertical">
+				<span class="slider-setting breakfast-setting">7</span>
+			</div><!--
+			--><div class="slider-wrap lunch-wrap">
+				<span class="slider-label">Lunch</span>
+				<input class="slider lunch-slider" data-meal="lunch" type="range" min="0" max="9" step="1" value="7" data-orientation="vertical">
+				<span class="slider-setting lunch-setting">7</span>
+			</div><!--
+			--><div class="slider-wrap dinner-wrap">
+				<span class="slider-label">Dinner</span>
+				<input class="slider dinner-slider" data-meal="dinner" type="range" min="0" max="9" step="1" value="7" data-orientation="vertical">
+				<span class="slider-setting dinner-setting">7</span>
+			</div>
+		</div>
+
+		<div class="output">
+			<span class="output-text">
+				Move the sliders to select the <br /> number of meals per week you plan <br /> to eat in a dining hall.
+			</span>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="http://www.ChrisOffline.com" class="footer-text">Copyright 2016 &copy; Chris Gregory</a>
+	</div>
+	
+	<span class="message"></span>
+</body>
+</html>
